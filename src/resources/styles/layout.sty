@@ -1,0 +1,63 @@
+% Font
+% ----
+\usepackage[T1]{fontenc}
+\usepackage[default, semibold]{sourcesanspro}
+\usepackage[10pt]{moresize}
+
+
+% Margin
+% ------
+\usepackage[margin=1.5cm, top=.5cm]{geometry}
+
+
+% Spacing
+% -------
+\raggedright
+\raggedbottom
+
+
+% Page number
+% -----------
+\pagenumbering{gobble}
+
+
+% Color
+% -----
+\usepackage{xcolor}
+\definecolor{highlight}{RGB}{61, 90, 128}
+
+
+% Hyperlink
+% ---------
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=highlight}
+
+
+% Section
+% -------
+\usepackage[nostruts]{titlesec}
+\titlespacing*{\section}{0em}{0.5em}{0em}
+\titleformat{\section}{\color{highlight} \scshape \raggedright \large}{}{0em}{}[\vspace{-0.75em}\hrulefill]
+
+
+% Subsection
+% ----------
+\titlespacing*{\subsection}{0em}{0em}{0em}
+\titleformat{\subsection}{\bfseries}{}{0em}{}[]
+
+
+% Command
+% -------
+\newcommand{\subtext}[1]{\textit{#1}\par\vspace{-.75em}}
+
+
+% List
+% ----
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlist[itemize]{align=parleft,left=0pt..1em}
+
+\newenvironment{zitemize}{
+  \begin{itemize} \itemsep 0pt \parskip 0pt \parsep 1pt
+}
+{\end{itemize}\vspace{-.5em}}
