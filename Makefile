@@ -1,6 +1,6 @@
 # Define the directories and files
 DIRS = en_us pt_br
-FILES = template.tex
+FILES = template.tex resume.tex
 
 
 # Define the targets

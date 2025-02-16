@@ -1,0 +1,47 @@
+% Contact
+% -------
+\def\name{Thiago Lopes}
+\def\role{Analista de Sistemas}
+\def\user{aslthiago}
+\def\email{\user @gmail.com}
+\def\phone{+55 24 98853-7659}
+\def\location{Rio de Janeiro, Brasil}
+\def\timezone{UTC -03:00}
+
+
+% Header
+% ------
+\usepackage{fancyhdr}
+\fancypagestyle{fancy}{
+  \fancyhf{}
+
+  \lhead{
+    {\small \today} \\
+    \role \\
+    \href{mailto:\email}{\email}
+  }
+
+  \chead{
+    \centering
+    {\HUGE \bfseries \name}
+    \vspace{0em}
+  }
+
+  \rhead{
+    {\small \timezone} \\
+    \location \\
+    \href{tel:\phone}{\phone}
+  }
+
+  \renewcommand{\headrulewidth}{1pt}
+  \renewcommand{\headrule}{
+    \hbox to\headwidth{
+      % \color{highlight}\leaders\hrule height \headrulewidth\hfill
+    }
+  }
+}
+\pagestyle{fancy}
+
+\setlength{\headheight}{90pt}
+\setlength{\headsep}{5pt}
+
